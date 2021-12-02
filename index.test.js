@@ -27,7 +27,5 @@ test("Test map function", () => {
     return value * value;
   });
 
-  assert.strictEqual(result[0], 9);
-  assert.strictEqual(result[1], 36);
-  assert.strictEqual(result[2], 81);
+  assert.deepStrictEqual(result, [9, 36, 81]);
 });
